@@ -11,7 +11,7 @@ class FornecedorSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        
+    {      
+        factory(SiteContato::class, 100)->create();        
     }
 }
