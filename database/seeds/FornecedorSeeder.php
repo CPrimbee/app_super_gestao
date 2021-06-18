@@ -12,6 +12,6 @@ class FornecedorSeeder extends Seeder
      */
     public function run()
     {      
-        factory(SiteContato::class, 100)->create();        
+        factory(Fornecedor::class, 3)->create();        
     }
 }
