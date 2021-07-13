@@ -11,7 +11,8 @@ class SobreNosController extends Controller
         $this->middleware('log.acesso');
     }
 
-    public function sobreNos(){
+    public function sobreNos()
+    {
         return view('site.sobre-nos', ['titulo' => 'Sobre Nós']);
     }
 }
