@@ -8,14 +8,16 @@ use App\SiteContato;
 
 class ContatoController extends Controller
 {
-    public function contato(Request $request){
+    public function contato(Request $request)
+    {
 
         $motivo_contatos = MotivoContato::all();
 
         return view('site.contato', ['titulo' => 'Contato', 'motivo_contatos' => $motivo_contatos]);
     }
 
-    public function salvar(Request $request){
+    public function salvar(Request $request)
+    {
         //realizar a validação dos dados do formulário recebido no request
         $regras = [
             'nome' => 'required|min:3|max:40|unique:site_contatos',
